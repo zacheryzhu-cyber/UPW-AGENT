@@ -5439,7 +5439,7 @@ h2 b{font-weight:700;color:var(--bright)}
     <div class=&quot;tcase rv&quot;>Project Case Study</div>
     <div class=&quot;eyebrow rv&quot; style=&quot;justify-content:center&quot;>GlobalFoundries &amp;middot; Singapore &amp;middot; Executive Briefing</div>
 
-    <h1 class=&quot;rv tglow&quot; style=&quot;transition-delay:.1s&quot;>Digital Factory<br><b>Command Centre</b></h1>
+    <h1 class=&quot;rv tglow&quot; style=&quot;transition-delay:.1s&quot;>Advanced Facilities<br><b>Control Centre</b></h1>
 
     <div class=&quot;tpunch rv&quot; style=&quot;transition-delay:.26s&quot;>
       Five fabs. <b>One source of truth.</b>
@@ -5457,9 +5457,11 @@ h2 b{font-weight:700;color:var(--bright)}
       <div class=&quot;ts&quot;><b><span data-count=&quot;500&quot;>0</span></b><i>PdM assets in scope</i></div>
       <div class=&quot;ts&quot;><b><span data-count=&quot;16&quot;>0</span></b><i>month programme</i></div>
     </div>
-    <div class=&quot;trow rv&quot; style=&quot;transition-delay:.54s&quot;>Phase 2</div>
+    <div class=&quot;trow rv&quot; style=&quot;transition-delay:.54s&quot;>Going Global</div>
     <div class=&quot;tstrip rv&quot; style=&quot;transition-delay:.54s&quot;>
-      <div class=&quot;ts&quot;><b>9</b><i>fabs total</i></div>
+      <div class=&quot;ts&quot;><b>5</b><i>Singapore fabs</i></div>
+      <div class=&quot;ts&quot;><b>1</b><i>Germany fab</i></div>
+      <div class=&quot;ts&quot;><b>2</b><i>US fabs</i></div>
       <div class=&quot;ts&quot;><b>3</b><i>countries</i></div>
       <div class=&quot;ts&quot;><b>1 Million</b><i>tags in scope</i></div>
     </div>
@@ -8686,7 +8688,7 @@ document.querySelectorAll('.toc-link').forEach(function(a){
   document.getElementById('mktCase').addEventListener('click',function(e){
     e.preventDefault(); e.stopPropagation();
     var inner=frame.contentDocument&&frame.contentDocument.getElementById('deck');
-    if(inner) inner.scrollTo({top:0,behavior:'instant'});
+    if(inner&&inner.scrollTop>0) inner.scrollTo({top:0,behavior:'instant'});
     target.scrollIntoView({behavior:rm?'auto':'smooth',block:'start'});
   });
   function openRobot(li){
